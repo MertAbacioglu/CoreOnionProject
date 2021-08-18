@@ -1,0 +1,20 @@
+﻿
+* Microsoft.EntityFramworkCore.Proxies : LazyLoading tetiklensin diye(sadece DAL'da olması yeterli)
+
+* Microsoft.EntityFramworkCore.Tools Migration işlemlerini terminalden yapabilmek için gerekli(sadece DAL'da olması yeterli)
+
+* Microsoft.EntityFramworkCore.Design : RunTime'da oluşacak Configuration ayarlamalarını sağlar(Dal appSettingJson'a ulaşamaz bunu yüklemezsek) UI'a yükle configuration orada.
+
+* Microsoft.AspNetCore.Identity.EntityFrameWork : IdentityDbContext'in gelebilmesi için gerekli olan yapı.
+
+* Microsoft.Extensions.Configuration :
+
+* Microsoft.AspNetCore.Identity: .NetCore'un sunduğu Identity yapısını kullanabilmek için gerekli olan kütüphane DAL ve BLL'e yüklenecek.
+
+* Autofac : service.AddTransient gibi yapıları baska katmanlardan da ayırıp KATMAN BAĞIMSIZ hale getirebilmek için katman bağımsız hale getirebilmek adına ihtiyaımız olan yöntemlerden birisi için kullandığımı kütüphanedir
+
+* Microsoft.Extensions.DependencyInjection : Autofac kütüphanesinin DbContext sınıfıyla iletişime geçebilmsi adına servislri belrleyebilmesi için ihtiyacımız olan kütüphanedir.BLLe yüklenecek
+
+* System.Configurtio.ConfigurationManager : Configuration dosyalarını (run Time 'da oluşanlar) katmanlar arası iletişime sokabilmek için indirdiğimiz kütüphanedir.şimdilik kullanmayabiliriz yeni güncellemelerde ihtiyacımız azaldı.
+
+*Microsoft.EntityFramework.SqlServer : DAL, UI, BLL
