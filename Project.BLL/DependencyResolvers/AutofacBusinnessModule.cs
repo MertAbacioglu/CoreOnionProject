@@ -64,7 +64,7 @@ namespace Project.BLL.DependencyResolvers
                 return new MyContext(opt.Options);
             }).AsSelf().InstancePerLifetimeScope();
 
-            //InstancePerLifetimeScope(); ile Scoped yapmak istedim.DInj olduğu için ordan oraya prametrik gödnermesi daha cok yorar DI yapısı database yönetimini hallediyor zaten.
+            //InstancePerLifetimeScope(); ile Scoped yapmak istedim.DInj olduğu için ordan oraya prametrik gödnermesi daha cok yorar. DI yapısı database yönetimini hallediyor zaten.
 
         }
 
