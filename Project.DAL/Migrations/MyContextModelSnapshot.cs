@@ -273,7 +273,6 @@ namespace Project.DAL.Migrations
                     b.Property<string>("ProductName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Status")
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
